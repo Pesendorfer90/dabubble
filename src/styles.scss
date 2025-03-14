@@ -454,3 +454,10 @@ h1 {
   justify-content:space-between;
   align-items: space-between;
 }
+
+@mixin f_r_fe_c {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  align-items: center;
+}

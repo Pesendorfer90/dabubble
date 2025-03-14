@@ -212,6 +212,30 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .logo-div {
+    cursor: default;
+    @include styles.dFlex($d: flex,
+      $fd: row,
+      $jc: flex-start,
+      $ai: center,
+      $g: 0px);
+  
+    .content-container {
+      @include styles.dFlex($d: flex,
+        $fd: row,
+        $jc: flex-start,
+        $ai: center,
+        $g: 24px);
+    }
+  
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+}
+
 
 @media (max-width: 1024px) {
   $left: 50%;

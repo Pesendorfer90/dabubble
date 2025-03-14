@@ -11,6 +11,7 @@ header {
   box-sizing: border-box;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
+
   &.new-message-header {
     height: 120px;
   }
@@ -20,8 +21,9 @@ header {
   @include s.f_r_fs_c;
   gap: 8px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
   padding: 0.5rem;
+
   &:hover {
     color: c.$secondary-color;
     background-color: c.$general-bg-color;
@@ -90,8 +92,10 @@ mat-icon {
   cursor: pointer;
   border-radius: 30px;
   padding: 5px 12px;
+
   &:hover {
     background-color: c.$general-bg-color;
+
     .member-list-number {
       transform: scale(1.1);
     }
@@ -125,6 +129,7 @@ button {
   cursor: pointer;
   padding: 10px;
   z-index: 1;
+
   &:hover .add-user-icon {
     transform: scale(1.2);
   }
@@ -205,6 +210,7 @@ button {
         font-size: 14px;
         min-width: 150px;
         margin-left: 0.25rem;
+
         &.disabled {
           display: none;
         }
@@ -275,6 +281,15 @@ button {
   display: none;
 }
 
+
+
+@media (max-width: 1400px) {
+  header {
+    padding: 0 32px;
+
+  }
+}
+
 @media (max-width: 1250px) {
   button {
     display: none;
@@ -282,8 +297,20 @@ button {
 }
 
 @media (max-width: 1200px) {
+  header {
+    padding: 0 24px;
+
+  }
+
   .selection-name.direct-message-header p {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 0 16px;
+
   }
 }
 
@@ -316,9 +343,11 @@ button {
   mat-icon {
     font-size: 24px;
   }
+
   .selection-name {
     font-size: 16px;
   }
+
   header {
     padding-left: 32px;
     padding-right: 32px;

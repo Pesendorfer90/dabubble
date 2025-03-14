@@ -214,21 +214,23 @@ section {
     @include s.f_r_fs_c;
     flex-wrap: wrap;
     height: 100%;
-    padding: 5px 10px;
+    padding: 10px 20px;
     max-height: fit-content;
+    gap: 0;
 
     >img {
       flex: 0 0 40px;
-      margin-right: 15px;
+      padding-right: 15px;
     }
 
     >div:nth-child(2) {
-      flex: 0 0 calc(100% - 55px);
+      flex: 0 0 calc(100% - 70px);
     }
 
     >div:last-child {
       flex: 0 0 calc(100% - 55px);
       padding-left: 55px;
+      padding-top: 5px;
     }
   }
 
@@ -238,7 +240,7 @@ section {
 
   .thread-message-container {
     @include s.f_c_c_fs;
-    padding-top: 4px;
+    gap: 2px;
 
     span {
       width: 100%;

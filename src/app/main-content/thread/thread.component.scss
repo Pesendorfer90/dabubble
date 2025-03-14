@@ -25,7 +25,7 @@ header {
   @include s.f_r_fs_c;
   gap:8px;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .channel-name {
@@ -92,9 +92,9 @@ app-message-input-box {
 }
 
 @media (max-width: 1100px) {
-  .thread-header p {
-    font-size: 20px;
-  }
+  // .thread-header p {
+  //   font-size: 20px;
+  // }
 
   .channel-name {
     font-size: 12px;
